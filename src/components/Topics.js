@@ -1,8 +1,17 @@
-import React from 'react'
+import React,{useContext} from 'react'
+import { ShowContext } from '../hooks/context/showContext';
+import { QuizContext } from '../hooks/context/useContext';
 
 const Topics = () => {
+    const show = useContext(ShowContext);
+    console.log(show)
+
     return (
         <div className="topic__container">
+            <div className="main__screen__circle_2" style={{background: "#476bad"}}></div>
+            <div className="main__screen__circle" style={{background: "#418b8b"}}></div>
+            <div className="main__screen__circle_3" style={{background: "#418b8b"}}></div>
+
             <div className="topic__header">
                 <i class="material-icons">chevron_left</i>
                 <div className="topic__title">Topic</div>
